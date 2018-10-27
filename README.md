@@ -22,12 +22,14 @@ You can participate on as many challenges as you wish:
   - Successive interviews for projects MAY be run to satisfy participating Africa's Talking Partners
 
 ## Code Challenge Bounty:
-  - First Prizes: Yet to be disclosed
-
+  - 1st Place: #50,000 NGN + PC and Phone Accessories
+  - 2nd Place: #30,000 NGN + PC and Phone Accessories
+  - 3rd Place: #20,000 NGN + PC and Phone Accessories
+ 
 ## Task
-In this code challenge you will be required to build out an application that solves a problem in your community with the Africa's Talking SDKs (or the Gateways if it suits you better 😉). The most creative solutions will be considered for rewards. The following conditions should be met:
-  - The application should be able to use 2 or more AT services
-  - Serve a genuine need in the community
+In this code challenge you will be required to build out an application in any stack of your choice with the Africa's Talking SDKs (or the Gateways if it suits you better :wink:). The First 3 Submission that compile without any errors, serves the purpose outlined and are the most creative solutions will be considered for the prizes. The following conditions should be met:
+
+The application should be able to use 2 or more AT services
 
 ### Bonus points:
 1. User logs in or signs up for the application
