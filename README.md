@@ -1,5 +1,5 @@
 # nHub Code Challenge: nHub Developer Community
-## Due:  2018 or Earlier
+## Due: 12 Noon, 30th October 2018 or Earlier
 
 ## Simple Unchanging Rules
 The code challenge is and will always be judged using the following criteria:
