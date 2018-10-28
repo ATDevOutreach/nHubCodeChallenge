@@ -1,0 +1,7 @@
+{
+    "name": "airtime-rewards-backend",
+    "description": "",
+    "repository": "https://github.com/okibeogezi/airtime-rewards-backend",
+    "keywords": [],
+    "image": "heroku/nodejs"
+}
