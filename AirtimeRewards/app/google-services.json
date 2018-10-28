@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "724456800518",
+    "firebase_url": "https://airtime-rewards.firebaseio.com",
+    "project_id": "airtime-rewards",
+    "storage_bucket": "airtime-rewards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724456800518:android:2c170b2df8c5b0c7",
+        "android_client_info": {
+          "package_name": "com.makerloom.airtimerewards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724456800518-12b1mp2ktot47be5v5umd8gi2r4i1pf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makerloom.airtimerewards",
+            "certificate_hash": "7d4d3d266a5fcf4953e8806abe4acc99db9b187c"
+          }
+        },
+        {
+          "client_id": "724456800518-vb1qk675cg9k5mk7ns89l431kor9414h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEYU_e6C9SDwH4GAiZ7Ulj8xXlcSFPmT4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724456800518-vb1qk675cg9k5mk7ns89l431kor9414h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

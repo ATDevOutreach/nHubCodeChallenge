@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SurveyActivity"
+    tools:showIn="@layout/activity_survey">
+
+    <com.stepstone.stepper.StepperLayout
+        android:id="@+id/stepper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ms_backButtonText="Previous"
+        app:ms_nextButtonText="Next"
+        app:ms_completeButtonColor="@android:color/white"
+        app:ms_completeButtonText="SUBMIT"
+        app:ms_nextButtonColor="@android:color/white"
+        app:ms_backButtonColor="@android:color/white"
+        app:ms_bottomNavigationBackground="@color/colorPrimary"
+        app:ms_stepperType="tabs" />
+
+</android.support.constraint.ConstraintLayout>

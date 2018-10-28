@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:paddingBottom="64dp"
+    android:paddingTop="64dp"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="sans-serif-light"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="36dp"
+        android:gravity="center"
+        android:text="Complete surveys and earn airtime rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/look_for_survey_btn"
+        android:text="Look For Surveys"
+        fancy:fb_text="Look For Surveys"
+        android:textStyle="normal"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_radius="8dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="18dp"
+        fancy:fb_iconPaddingLeft="22dp"
+        fancy:fb_iconPosition="right"
+        fancy:fb_fontIconSize="20sp"
+        fancy:fb_fontIconResource="&#xf002;"
+        fancy:fb_disabledColor="@color/md_grey_200"
+        fancy:fb_disabledBorderColor="@color/md_grey_200"
+        fancy:fb_disabledTextColor="@color/md_grey_600"
+        fancy:fb_borderColor="@color/colorPrimaryDark"
+        fancy:fb_defaultColor="@color/colorPrimaryDark"
+        fancy:fb_focusColor="@android:color/white"
+        fancy:fb_textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

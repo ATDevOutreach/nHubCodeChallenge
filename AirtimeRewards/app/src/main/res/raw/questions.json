@@ -1,0 +1,58 @@
+[
+  {
+    "questionText": "What age bracket do you belong to?",
+    "radioButtonType": true,
+    "options": [
+      "Below 18",
+      "18-25",
+      "26-30",
+      "31-40",
+      "41-50",
+      "Above 50"
+    ]
+  },
+  {
+    "questionText": "What is your favourite instant noodles product?",
+    "radioButtonType": true,
+    "options": [
+      "Indomie Noodles",
+      "Mi Mi Noodles",
+      "Dangote Noodles",
+      "Other"
+    ]
+  },
+  {
+    "questionText": "What is your party of choice in the upcoming elections?",
+    "radioButtonType": true,
+    "options": [
+      "PDP",
+      "APC",
+      "SDP",
+      "Other"
+    ]
+  },
+  {
+    "questionText": "Who is your candidate of choice in the upcoming elections?",
+    "radioButtonType": true,
+    "options": [
+      "Donald Duke",
+      "Atiku Abubakar",
+      "Mohammadu Buhari",
+      "Other"
+    ]
+  },
+  {
+    "questionText": "What is your favourite car brand?",
+    "inputType": true
+  },
+  {
+    "questionText": "Which transport means would you use when travelling across geopolitical zones?",
+    "checkBoxType": true,
+    "options": [
+      "Train",
+      "Public Vehicle",
+      "Private Vehicle",
+      "Plane"
+    ]
+  }
+]
