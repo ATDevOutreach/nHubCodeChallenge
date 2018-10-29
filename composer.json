@@ -9,7 +9,6 @@
         "calcinai/php-imagick": "^0.1.2",
         "cartalyst/sentinel": "2.0.*",
         "fideloper/proxy": "~3.3",
-        "freddiedfre/africas_talking_laravel_5": "dev-master",
         "fzaninotto/faker": "~1.4",
         "guzzlehttp/guzzle": "^6.3",
         "intervention/image": "^2.4",

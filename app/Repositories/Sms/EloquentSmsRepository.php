@@ -6,7 +6,6 @@ use App\Repositories\Sms\AfricasTalkingGateway;
 
 class EloquentSmsRepository implements SmsContract
 {
-
 	
 	public function sendMessage($request) {
 		$username   = "sandbox";
@@ -28,7 +27,6 @@ class EloquentSmsRepository implements SmsContract
 		$username   = "sandbox";
 		$apikey     = "62c81e27bf56cdbd40286ddab299a217588ad97c407000c2508a8a3d0911bb4c";
 		$recipients = $request->phone;
-
 		$message    = "Thank you for your order, someone from our team would contact you soon";
 		
 		$gateway    = new AfricasTalkingGateway($username, $apikey, "sandbox");

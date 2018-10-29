@@ -176,8 +176,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
- 				App\Providers\SmsServiceProvider::class,
- 				App\Providers\OrderServiceProvider::class,
+ 		App\Providers\SmsServiceProvider::class,
+ 		App\Providers\OrderServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
  		App\Providers\ForgotPasswordServiceProvider::class,
  		App\Providers\ActivationServiceProvider::class,
@@ -188,8 +188,7 @@ return [
         Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
         'Intervention\Image\ImageServiceProvider',   
         'JD\Cloudder\CloudderServiceProvider', 
-        leyo\rapidussd\rapidussdServiceProvider::class,   
-        FreddieDfre\AfricasTalkingLaravel5\AfricasTalkingLaravel5ServiceProvider::class,
+        leyo\rapidussd\rapidussdServiceProvider::class,
 
     ],
 
@@ -248,7 +247,6 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Cloudder' => 'JD\Cloudder\Facades\Cloudder',
-        'SMSProvider' =>FreddieDfre\AfricasTalkingLaravel5\AfricasTalkingLaravel5Facade::class,
     ],
 
 ];

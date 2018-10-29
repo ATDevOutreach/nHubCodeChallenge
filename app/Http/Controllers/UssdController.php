@@ -62,7 +62,7 @@ class UssdController extends Controller
             //user authentication
             $message = '';
 
-                $response = self::getMenuAndItems($user,1);
+            $response = self::getMenuAndItems($user,1);
         
             //get the home menu
             self::sendResponse($response, 1, $user);
@@ -155,7 +155,7 @@ class UssdController extends Controller
             if (self::postUssdConfirmationProcess($user)) {
                 $response = $menu->confirmation_message;
             } else {
-                $response = "We had a problem processing your request. Please contact Watu Credit Customer Care on 0790 000 999";
+                $response = "We had a problem processing your request. Please contact Terminus.ng Customer Care on 07035039214";
             }
 
             self::resetUser($user);
