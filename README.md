@@ -39,6 +39,7 @@ Very simple.... Just pick up your phone (probably enroute to the store), dial th
   - Launch the project with ```php artisan serve```
   - Open project on your browser at ```localhost:8000``` or ```127.0.0.1:8000```
   - Go to ```/auth/login``` access the admin portal.
+  - username: ```user@terminus.ng```, password: ```secret```
 
 ### Note
   In order to test USSD locally, you will need to expose your local machine to the public domain. ```ngrok``` is a great tool for that.
