@@ -3,10 +3,9 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Cartalyst\Sentinel\Users\EloquentUser;
 
-class User extends Authenticatable
+class User extends EloquentUser
 {
     use Notifiable;
 
@@ -16,7 +15,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'first_name',
+        'last_name',
+        'email',
+        'password',
+        'phone_number',
+        'address',
+        'twitter',
+        'facebook',
+        'gplus',
     ];
 
     /**
@@ -27,4 +34,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public static function byEmail($email) {
+        return static::whereEmail($email)->first();
+    }
+
+    public function businesses() {
+        return $this->hasMany('App\Business');
+    }
 }
