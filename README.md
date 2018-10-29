@@ -20,7 +20,12 @@ We get the job done, keeping you in the loop at every step of the process. We al
 
 
 ## How it Works # Two (Code Challenge)
-Dial ```*384*25851#``` from your mobile phone. Follow the prompts and place an order
+#### Introduction
+There are many cases/instances where one can be so busy to the extend of not having time to go to the super market/mall to do shopping like regular individuals. Going through rows of shelves trying to pick out items in a super market or shopping mall can be overwhelming sometimes and time consuming especially when you are on a tight schedule.
+
+Terminus.ng bridges the gab and ease the stress and brings us to the question HOW?.
+
+Very simple.... Just pick up your phone (probably enroute to the store), dial the short code ```*384*25851#``` from your mobile phone. Follow the prompts, select a store and place your order. The super market or shopping mall logs into the terminus.ng dashboard and sees the order request, assigns a staff to collect all the items on the order list, Buyers get notified via SMS that their purchase order is ready for pick up. Buyer picks up his/her order, confirm all is as ordered, make payment for the said items, head back home within minutes not hours.
 
 
 # Setting up the Project
@@ -29,8 +34,11 @@ Dial ```*384*25851#``` from your mobile phone. Follow the prompts and place an o
   - ```composer install```
   - create a .env file by running ```touch .env``` or copy .env.example using ```cp .env.example .env```, fill in the required parameters
   - Generate an app key by running ```php artisan key:generate```
+  - migrate the database tables with ```php artisan migrate```
+  - Seed the database tables with demo data for testing```php artisan db:seed```
   - Launch the project with ```php artisan serve```
   - Open project on your browser at ```localhost:8000``` or ```127.0.0.1:8000```
+  - Go to ```/auth/login``` access the admin portal.
 
 ### Note
-  In order to test ussd locally, you will need to expose your local machine to the public domain. ```ngrok``` is a great tool for that.
+  In order to test USSD locally, you will need to expose your local machine to the public domain. ```ngrok``` is a great tool for that.

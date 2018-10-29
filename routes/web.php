@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/how-it-works', function () {
+	return view('how');
+})->name('how');
+
 Route::post('/sendSms', 'SmsController@sendChatMessage')->name('sendChatMessage');
 Route::post('/sendussd', 'UssdController@index')->name('send_ussd');
 

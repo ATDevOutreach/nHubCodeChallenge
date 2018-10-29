@@ -80,7 +80,7 @@
             <div class="mainmenu">
               <ul id="navigation">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="#">How It Works</a></li>                                
+                <li><a href="{{ route('how') }}">How It Works</a></li>                                
               </ul>
             </div>
           </div>

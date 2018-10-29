@@ -275,7 +275,7 @@ a.lightbox-gallery::after {
     background-image: url(assets/img/blog-img-5.jpg);
 }
 .cleaning-mini-banner {
-    background-image: url(assets/img/bread-cumb-bg.jpg);
+    background-image: url(../img/bread-cumb-bg.jpg);
 }
 .team-bg-1 {
     background-image: url(assets/img/team-1.jpg);
