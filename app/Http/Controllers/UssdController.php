@@ -41,7 +41,7 @@ class UssdController extends Controller
         //verify that the user exists
         $no = substr($phoneNumber, -9);
 
-        $user = ussd_user::where('phone', "0" . $no)->orWhere('phone', "254" . $no)->first();
+        $user = ussd_user::where('phone', "0" . $no)->orWhere('phone', "234" . $no)->first();
 
         if (!$user) {
             //if user phone doesn't exist, we check out if they have been registered to mifos

@@ -16,6 +16,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::post('/sendSms', 'SmsController@sendChatMessage')->name('sendChatMessage');
+Route::post('/sendussd', 'UssdController@index')->name('send_ussd');
 
 // Authentication Route Group
 Route::group(['prefix' => 'auth'], function() {

@@ -26,7 +26,7 @@
 	    {
 			$sms = $this->smsRepo->sendMessage($request);
 			if($sms) {
-				return redirect()->back()->with('success', 'Thank you for your interest, someone from our team would contact you soon');
+				return redirect()->back()->with('success', 'Thank you for showing interest in us, we will respond to you shortly via WhatsApp.');
 			}
 	    }
 
