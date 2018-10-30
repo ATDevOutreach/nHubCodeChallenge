@@ -31,6 +31,20 @@ router.get('/register', (req, res, next) => {
 });
 
 
+router.get('/airtime', (req, res, next) => {
+  res.render('airtime', {title:'Airtime'});
+});
+
+
+router.get('/mobileCheckout', (req, res, next) => {
+  res.render('mobileCheckout', {title:'Mobile Checkout'});
+});
+
+router.get('/sms', (req, res, next) => {
+  res.render('sms', {title:'SMS'});
+});
+
+
 router.get('/forgot', (req, res, next) => {
   res.render('forgot', {title:'Forgot'});
 });
