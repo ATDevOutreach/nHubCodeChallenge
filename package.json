@@ -1,0 +1,47 @@
+{
+  "name": "nhub_code_challenge",
+  "version": "1.0.0",
+  "description": "This is a hackjos compition",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Reuben Antz"
+  },
+  "contributors": {
+    "name": "Reuben Antz",
+    "email": "cheershrek@gmail.com"
+  },
+  "dependencies": {
+    "africastalking": "^0.3.2",
+    "async": "*",
+    "bcrypt": "*",
+    "bluebird": "*",
+    "body-parser": "*",
+    "compression": "*",
+    "consolidate": "*",
+    "cookie-parser": "*",
+    "cors": "^*",
+    "crypto": "*",
+    "debug": "*",
+    "dotenv": "*",
+    "express": "^4.16.4",
+    "express-session": "*",
+    "jade": "*",
+    "jsonwebtoken": "*",
+    "letsencrypt-express": "^2.0.6",
+    "lodash": "*",
+    "log": "*",
+    "log4js": "*",
+    "mongoose": "*",
+    "morgan": "^1.9.1",
+    "mustache": "*",
+    "nodemailer": "*",
+    "nodemon": "*",
+    "request": "*",
+    "serve-favicon": "~2.4.5",
+    "winston": "^3.1.0"
+  }
+}
