@@ -3,8 +3,8 @@ require  __DIR__ .'/../vendor/autoload.php';
 use  AfricasTalking\SDK\AfricasTalking;
 
 
-// $username   = "nHub";
-// $apikey     = "7300e00eeebe4e523b44f3535b79e2390b13382ac200d0dd19178e9b2be32530";
+ $username   = "";
+ $apikey     = "";
 
 class crud {
     private $db;
@@ -14,8 +14,8 @@ class crud {
         $this->db = $DB_con;
         // Set your app credentials
         // Initialize the SDK
-       // $this->AT = new AfricasTalking("sandbox", "c492cc4ba5d9cab90811fc12bb2a21a914f37b756c32091cd5456451c7102249");
-         $this->AT = new AfricasTalking("eddiebigs", "7300e00eeebe4e523b44f3535b79e2390b13382ac200d0dd19178e9b2be32530");
+       // $this->AT = new AfricasTalking("sandbox", "");
+         $this->AT = new AfricasTalking($username, $apiKey);
         // Get the SMS service
        
     }
