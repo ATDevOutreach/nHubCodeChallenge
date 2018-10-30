@@ -54,32 +54,10 @@ html(lang='en')
       h4
         | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       br
-      br
-      .row
-        .col-sm-6
-            pre
-                span#response
-        .col-sm-6.pt-1
-            p.lead Try clicking some buttons
-            br
-            .col-sm-8
-                input#phone.form-control(type='text', placeholder='Phone number e.g. +2347039468700')
-                a#sendSms.btn.btn-success.btn-sm(role='button') Send SMS
-            br
-            .col-sm-8
-                input#amount.form-control(type='text', placeholder='Amount e.g. ₦ 50')
-                a#airtime.btn.btn-success.btn-sm(role='button') Airtime
-            br
-            br
-            .col-sm-8
-                input.form-control(type='text', placeholder='Amount e.g. Naira 50')
-                a#mobileCheckout.btn.btn-success.btn-sm(role='button') Mobile Checkout
-            br
-            .col-sm-8
-                input.form-control(type='text', placeholder='Amount e.g. Naira 4456')
-                a#mobileB2C.btn.btn-success.btn-sm(role='button') Mobile B2C
-            br
-    // Footer
-    footer.text-center
-      a.up-arrow(href='#myPage', data-toggle='tooltip', title='TO TOP')
-        span.glyphicon.glyphicon-chevron-up
+      .form-group.clearfix
+          .col-sm-4
+            a.btn.btn-lg.btn-link(style='padding-left: 9;', href='/airtime') Airtime
+          .col-sm-4
+            a.btn.btn-lg.btn-link(style='padding-right: 4;', href='/sms') SMS
+          .col-sm-4
+            a.btn.btn-lg.btn-link(style='padding-right: 4;', href='/mobileCheckout') Payment
