@@ -2,8 +2,8 @@
 
 $DB_host = "localhost";
 $DB_user = "root";
-$DB_pass = "mysql";
-$DB_name = "challenge";
+$DB_pass = "";
+$DB_name = "";
 
 
 try {
