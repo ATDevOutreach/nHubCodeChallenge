@@ -1,0 +1,71 @@
+doctype html
+html(lang='en')
+  head
+    title Africa's Talk Hackathon
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="shortcut icon", type="img/ico", href="img/favicon.ico")
+    // Stylesheets
+    link(rel='stylesheet', href='styleshecssets/style.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed', rel='stylesheet', type='text/css')
+    // Scripts
+    script(src='js/jquery-1.12.0.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/main.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js')
+    script(src='js/main.js')
+  body#myPage(data-spy='scroll', data-target='.navbar', data-offset='50')
+    // nav section
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            img(src='img/5.png', alt='')
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right.nav-items
+            li
+              a(href='http://docs.africastalking.com')
+                em DOC
+            li
+              a(href='/login')
+                em LOGIN
+  body
+    h1.page-header.text-center Registration
+    p.text-center Please register with the form below
+    if errors
+      each error, i in errors
+        div.alert.alert-danger #{error.msg}
+    form(method="post", action="/register", enctype="multipart/form-data").row
+      .col-sm-12.container
+        form
+        span.form-description
+        .form-body.col-sm-6.col-sm-offset-3
+          .form-group
+          label(style='font-family: Architects Daughter') First Name:
+          input.form-control(type='text', name='firstName', size='50', placeholder='First Name', required='')
+          .form-group
+          label(tyle='font-family: Architects Daughter') Last Name:
+          input.form-control(type='lastName', name='lastName', size='50', placeholder='Last Name', required='')
+          .form-group
+          label(style='font-family: Architects Daughter') Email Address
+          input.form-control(placeholder='antz@mail.com', type='email', name='email', required='')
+          .form-group
+          label(style='font-family: Architects Daughter') Phone Number
+          input.form-control(placeholder='+234 *** *** ****', type='number', name='number', required='')
+          .form-group
+          label Password:
+          input.form-control(type='password', name='password', placeholder="Enter Password", required='')
+          .form-group
+          label Confrim Password:
+          input.form-control(type='password', name='password2', placeholder="Confirm Password")
+          br
+          button.btn.btn-primary(type="submit", name="submit", value="Register") Register

@@ -1,0 +1,69 @@
+/* HTML Element Styles */
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* IDs */
+
+#landing {
+  background: url("img/2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+#join-bg {
+  background: url("img/3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+#contact-form {
+  background-color: white;
+}
+
+
+/* Classes */
+
+
+/* Navbar */
+
+.nav-white {
+  color: rgba(255, 255, 255, 0.575);
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+.navbar a {
+  color: #fff !important;
+  /* Really shouldn't need important */
+}
+
+.jumbotron {
+  background: transparent;
+  margin-top: 10%;
+  padding-bottom: 250px;
+}
+
+.container {
+  padding: 80px 120px;
+}
+
+.nav-items > li > a > em {
+  font-style: normal;
+  padding-bottom: 6px;
+}
+
+.nav-items > li > a > em:hover {
+  border-bottom: 1.5px solid #e7e7e7;
+}
+
+
