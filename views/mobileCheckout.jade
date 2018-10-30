@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    title Africa's Talk Hackathon
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="shortcut icon", type="img/ico", href="img/favicon.ico")
+    // Stylesheets
+    link(rel='stylesheet', href='styleshecssets/style.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed', rel='stylesheet', type='text/css')
+    // Scripts
+    script(src='js/jquery-1.12.0.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/main.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/xml.min.js')
+    script(src='js/main.js')
+  body#myPage(data-spy='scroll', data-target='.navbar', data-offset='50')
+    // nav section
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            img(src='img/5.png', alt='')
+        #myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right.nav-items
+            li
+              a(href='http://docs.africastalking.com')
+                em DOC
+            li
+              a(href='/login')
+                em LOGIN
+            br
+  body
+    h1.page-header.text-center Mobile Checkout
+    br
+    form#mobileCheckoutForm(action="/payments/mobile-checkout", method="post")
+        .form-group.row
+            label.col-sm-2.col-form-label(for="productName") Product
+            .col-sm-7
+                input#productName.form-control(name="productName", type='text', placeholder='Enter product name' required)
+                small.form-text.text-muted
+                    | Enter your product name from Africa's Talking
+        .form-group.row
+            label.col-sm-2.col-form-label(for="phoneNumber") Phone
+            .col-sm-7
+                input#phoneNumber.form-control(name="phoneNumber", type='phone', placeholder='Enter phone number' required)
+                small.form-text.text-muted
+                    | Enter your phone number
+        .form-group.row
+            label.col-sm-2.col-form-label(for="currencyCode") Currency
+            .col-sm-7
+                select#currencyCode.custom-select(name="currencyCode", type="text")
+                    option(selected='' value='Naira') ₦
+                    option(value='UGS') UGS
+                    option(value='TZS') TZS
+                small.form-text.text-muted
+                    | Choose currency
+        .form-group.row
+            label.col-sm-2.col-form-label(for="amount") Amount
+            .col-sm-7
+                input#amount.form-control(name="amount", type='number', min='10', step='any', placeholder='Enter amount' required)
+                small.form-text.text-muted
+                    | Enter the amount to send
+        br
+        .form-group.row
+            .col-sm-7
+                button.btn.btn-success(type='submit') Send
